@@ -83,33 +83,46 @@ namespace Katzulhu_Cats
             this.lblStrength100 = new System.Windows.Forms.Label();
             this.lblConstitution100 = new System.Windows.Forms.Label();
             this.lblSize = new System.Windows.Forms.Label();
-            this.lblIntelligence = new System.Windows.Forms.Label();
-            this.lblDexterity = new System.Windows.Forms.Label();
-            this.lblEducation = new System.Windows.Forms.Label();
-            this.lblAppearance = new System.Windows.Forms.Label();
-            this.lblMana = new System.Windows.Forms.Label();
-            this.lblLuck = new System.Windows.Forms.Label();
+            this.lblIntelligence100 = new System.Windows.Forms.Label();
+            this.lblDexterity100 = new System.Windows.Forms.Label();
+            this.lblEducation100 = new System.Windows.Forms.Label();
+            this.lblAppearance100 = new System.Windows.Forms.Label();
+            this.lblMana100 = new System.Windows.Forms.Label();
+            this.lblLuck100 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
+            this.lblLuck50 = new System.Windows.Forms.Label();
+            this.lblMana50 = new System.Windows.Forms.Label();
+            this.lblAppearance50 = new System.Windows.Forms.Label();
+            this.lblEducation50 = new System.Windows.Forms.Label();
+            this.lblDexterity50 = new System.Windows.Forms.Label();
+            this.lblIntelligence50 = new System.Windows.Forms.Label();
             this.lblConstitution50 = new System.Windows.Forms.Label();
             this.lblStrength50 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
+            this.lblLuck33 = new System.Windows.Forms.Label();
+            this.lblMana33 = new System.Windows.Forms.Label();
+            this.lblAppearance33 = new System.Windows.Forms.Label();
+            this.lblEducation33 = new System.Windows.Forms.Label();
+            this.lblDexterity33 = new System.Windows.Forms.Label();
+            this.lblIntelligence33 = new System.Windows.Forms.Label();
             this.lblConstitution33 = new System.Windows.Forms.Label();
             this.lblStrength33 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.lblHP = new System.Windows.Forms.Label();
+            this.lblMP = new System.Windows.Forms.Label();
+            this.lblAnimalism = new System.Windows.Forms.Label();
+            this.lblAP = new System.Windows.Forms.Label();
+            this.btnRandom = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -133,7 +146,7 @@ namespace Katzulhu_Cats
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(39, 333);
+            this.label3.Location = new System.Drawing.Point(627, 155);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 2;
@@ -214,7 +227,7 @@ namespace Katzulhu_Cats
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(405, 333);
+            this.label12.Location = new System.Drawing.Point(745, 155);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(13, 13);
             this.label12.TabIndex = 35;
@@ -276,9 +289,9 @@ namespace Katzulhu_Cats
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(172, 377);
+            this.btnCalculate.Location = new System.Drawing.Point(297, 341);
             this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(75, 23);
+            this.btnCalculate.Size = new System.Drawing.Size(105, 35);
             this.btnCalculate.TabIndex = 48;
             this.btnCalculate.Text = "Go!";
             this.btnCalculate.UseVisualStyleBackColor = true;
@@ -588,64 +601,64 @@ namespace Katzulhu_Cats
             // lblSize
             // 
             this.lblSize.AutoSize = true;
-            this.lblSize.Location = new System.Drawing.Point(424, 333);
+            this.lblSize.Location = new System.Drawing.Point(780, 155);
             this.lblSize.Name = "lblSize";
             this.lblSize.Size = new System.Drawing.Size(13, 13);
             this.lblSize.TabIndex = 72;
             this.lblSize.Text = "5";
             // 
-            // lblIntelligence
+            // lblIntelligence100
             // 
-            this.lblIntelligence.AutoSize = true;
-            this.lblIntelligence.Location = new System.Drawing.Point(424, 128);
-            this.lblIntelligence.Name = "lblIntelligence";
-            this.lblIntelligence.Size = new System.Drawing.Size(0, 13);
-            this.lblIntelligence.TabIndex = 73;
+            this.lblIntelligence100.AutoSize = true;
+            this.lblIntelligence100.Location = new System.Drawing.Point(424, 128);
+            this.lblIntelligence100.Name = "lblIntelligence100";
+            this.lblIntelligence100.Size = new System.Drawing.Size(0, 13);
+            this.lblIntelligence100.TabIndex = 73;
             // 
-            // lblDexterity
+            // lblDexterity100
             // 
-            this.lblDexterity.AutoSize = true;
-            this.lblDexterity.Location = new System.Drawing.Point(424, 155);
-            this.lblDexterity.Name = "lblDexterity";
-            this.lblDexterity.Size = new System.Drawing.Size(0, 13);
-            this.lblDexterity.TabIndex = 74;
+            this.lblDexterity100.AutoSize = true;
+            this.lblDexterity100.Location = new System.Drawing.Point(424, 155);
+            this.lblDexterity100.Name = "lblDexterity100";
+            this.lblDexterity100.Size = new System.Drawing.Size(0, 13);
+            this.lblDexterity100.TabIndex = 74;
             // 
-            // lblEducation
+            // lblEducation100
             // 
-            this.lblEducation.AutoSize = true;
-            this.lblEducation.Location = new System.Drawing.Point(424, 182);
-            this.lblEducation.Name = "lblEducation";
-            this.lblEducation.Size = new System.Drawing.Size(0, 13);
-            this.lblEducation.TabIndex = 75;
+            this.lblEducation100.AutoSize = true;
+            this.lblEducation100.Location = new System.Drawing.Point(424, 182);
+            this.lblEducation100.Name = "lblEducation100";
+            this.lblEducation100.Size = new System.Drawing.Size(0, 13);
+            this.lblEducation100.TabIndex = 75;
             // 
-            // lblAppearance
+            // lblAppearance100
             // 
-            this.lblAppearance.AutoSize = true;
-            this.lblAppearance.Location = new System.Drawing.Point(424, 209);
-            this.lblAppearance.Name = "lblAppearance";
-            this.lblAppearance.Size = new System.Drawing.Size(0, 13);
-            this.lblAppearance.TabIndex = 76;
+            this.lblAppearance100.AutoSize = true;
+            this.lblAppearance100.Location = new System.Drawing.Point(424, 209);
+            this.lblAppearance100.Name = "lblAppearance100";
+            this.lblAppearance100.Size = new System.Drawing.Size(0, 13);
+            this.lblAppearance100.TabIndex = 76;
             // 
-            // lblMana
+            // lblMana100
             // 
-            this.lblMana.AutoSize = true;
-            this.lblMana.Location = new System.Drawing.Point(424, 236);
-            this.lblMana.Name = "lblMana";
-            this.lblMana.Size = new System.Drawing.Size(0, 13);
-            this.lblMana.TabIndex = 77;
+            this.lblMana100.AutoSize = true;
+            this.lblMana100.Location = new System.Drawing.Point(424, 236);
+            this.lblMana100.Name = "lblMana100";
+            this.lblMana100.Size = new System.Drawing.Size(0, 13);
+            this.lblMana100.TabIndex = 77;
             // 
-            // lblLuck
+            // lblLuck100
             // 
-            this.lblLuck.AutoSize = true;
-            this.lblLuck.Location = new System.Drawing.Point(424, 263);
-            this.lblLuck.Name = "lblLuck";
-            this.lblLuck.Size = new System.Drawing.Size(0, 13);
-            this.lblLuck.TabIndex = 78;
+            this.lblLuck100.AutoSize = true;
+            this.lblLuck100.Location = new System.Drawing.Point(424, 263);
+            this.lblLuck100.Name = "lblLuck100";
+            this.lblLuck100.Size = new System.Drawing.Size(0, 13);
+            this.lblLuck100.TabIndex = 78;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(424, 43);
+            this.label19.Location = new System.Drawing.Point(424, 48);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(33, 13);
             this.label19.TabIndex = 79;
@@ -654,7 +667,7 @@ namespace Katzulhu_Cats
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(487, 43);
+            this.label20.Location = new System.Drawing.Point(487, 48);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(27, 13);
             this.label20.TabIndex = 80;
@@ -663,59 +676,59 @@ namespace Katzulhu_Cats
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(543, 43);
+            this.label21.Location = new System.Drawing.Point(543, 48);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(47, 13);
             this.label21.TabIndex = 81;
             this.label21.Text = "33 1/3%";
             // 
-            // label22
+            // lblLuck50
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(487, 263);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(0, 13);
-            this.label22.TabIndex = 90;
+            this.lblLuck50.AutoSize = true;
+            this.lblLuck50.Location = new System.Drawing.Point(487, 263);
+            this.lblLuck50.Name = "lblLuck50";
+            this.lblLuck50.Size = new System.Drawing.Size(0, 13);
+            this.lblLuck50.TabIndex = 90;
             // 
-            // label23
+            // lblMana50
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(487, 236);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(0, 13);
-            this.label23.TabIndex = 89;
+            this.lblMana50.AutoSize = true;
+            this.lblMana50.Location = new System.Drawing.Point(487, 236);
+            this.lblMana50.Name = "lblMana50";
+            this.lblMana50.Size = new System.Drawing.Size(0, 13);
+            this.lblMana50.TabIndex = 89;
             // 
-            // label24
+            // lblAppearance50
             // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(487, 209);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(0, 13);
-            this.label24.TabIndex = 88;
+            this.lblAppearance50.AutoSize = true;
+            this.lblAppearance50.Location = new System.Drawing.Point(487, 209);
+            this.lblAppearance50.Name = "lblAppearance50";
+            this.lblAppearance50.Size = new System.Drawing.Size(0, 13);
+            this.lblAppearance50.TabIndex = 88;
             // 
-            // label25
+            // lblEducation50
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(487, 182);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(0, 13);
-            this.label25.TabIndex = 87;
+            this.lblEducation50.AutoSize = true;
+            this.lblEducation50.Location = new System.Drawing.Point(487, 182);
+            this.lblEducation50.Name = "lblEducation50";
+            this.lblEducation50.Size = new System.Drawing.Size(0, 13);
+            this.lblEducation50.TabIndex = 87;
             // 
-            // label26
+            // lblDexterity50
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(487, 155);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(0, 13);
-            this.label26.TabIndex = 86;
+            this.lblDexterity50.AutoSize = true;
+            this.lblDexterity50.Location = new System.Drawing.Point(487, 155);
+            this.lblDexterity50.Name = "lblDexterity50";
+            this.lblDexterity50.Size = new System.Drawing.Size(0, 13);
+            this.lblDexterity50.TabIndex = 86;
             // 
-            // label27
+            // lblIntelligence50
             // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(487, 128);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(0, 13);
-            this.label27.TabIndex = 85;
+            this.lblIntelligence50.AutoSize = true;
+            this.lblIntelligence50.Location = new System.Drawing.Point(487, 128);
+            this.lblIntelligence50.Name = "lblIntelligence50";
+            this.lblIntelligence50.Size = new System.Drawing.Size(0, 13);
+            this.lblIntelligence50.TabIndex = 85;
             // 
             // lblConstitution50
             // 
@@ -733,53 +746,53 @@ namespace Katzulhu_Cats
             this.lblStrength50.Size = new System.Drawing.Size(0, 13);
             this.lblStrength50.TabIndex = 82;
             // 
-            // label31
+            // lblLuck33
             // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(543, 263);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(0, 13);
-            this.label31.TabIndex = 99;
+            this.lblLuck33.AutoSize = true;
+            this.lblLuck33.Location = new System.Drawing.Point(543, 263);
+            this.lblLuck33.Name = "lblLuck33";
+            this.lblLuck33.Size = new System.Drawing.Size(0, 13);
+            this.lblLuck33.TabIndex = 99;
             // 
-            // label32
+            // lblMana33
             // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(543, 236);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(0, 13);
-            this.label32.TabIndex = 98;
+            this.lblMana33.AutoSize = true;
+            this.lblMana33.Location = new System.Drawing.Point(543, 236);
+            this.lblMana33.Name = "lblMana33";
+            this.lblMana33.Size = new System.Drawing.Size(0, 13);
+            this.lblMana33.TabIndex = 98;
             // 
-            // label33
+            // lblAppearance33
             // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(543, 209);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(0, 13);
-            this.label33.TabIndex = 97;
+            this.lblAppearance33.AutoSize = true;
+            this.lblAppearance33.Location = new System.Drawing.Point(543, 209);
+            this.lblAppearance33.Name = "lblAppearance33";
+            this.lblAppearance33.Size = new System.Drawing.Size(0, 13);
+            this.lblAppearance33.TabIndex = 97;
             // 
-            // label34
+            // lblEducation33
             // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(543, 182);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(0, 13);
-            this.label34.TabIndex = 96;
+            this.lblEducation33.AutoSize = true;
+            this.lblEducation33.Location = new System.Drawing.Point(543, 182);
+            this.lblEducation33.Name = "lblEducation33";
+            this.lblEducation33.Size = new System.Drawing.Size(0, 13);
+            this.lblEducation33.TabIndex = 96;
             // 
-            // label35
+            // lblDexterity33
             // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(543, 155);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(0, 13);
-            this.label35.TabIndex = 95;
+            this.lblDexterity33.AutoSize = true;
+            this.lblDexterity33.Location = new System.Drawing.Point(543, 155);
+            this.lblDexterity33.Name = "lblDexterity33";
+            this.lblDexterity33.Size = new System.Drawing.Size(0, 13);
+            this.lblDexterity33.TabIndex = 95;
             // 
-            // label36
+            // lblIntelligence33
             // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(543, 128);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(0, 13);
-            this.label36.TabIndex = 94;
+            this.lblIntelligence33.AutoSize = true;
+            this.lblIntelligence33.Location = new System.Drawing.Point(543, 128);
+            this.lblIntelligence33.Name = "lblIntelligence33";
+            this.lblIntelligence33.Size = new System.Drawing.Size(0, 13);
+            this.lblIntelligence33.TabIndex = 94;
             // 
             // lblConstitution33
             // 
@@ -817,38 +830,166 @@ namespace Katzulhu_Cats
             this.label37.TabIndex = 101;
             this.label37.Text = "Weitere Werte";
             // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(627, 48);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(71, 13);
+            this.label22.TabIndex = 102;
+            this.label22.Text = "Trefferpunkte";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(627, 74);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(69, 13);
+            this.label23.TabIndex = 103;
+            this.label23.Text = "Magiepunkte";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(627, 101);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(68, 13);
+            this.label24.TabIndex = 104;
+            this.label24.Text = "Tierhaftigkeit";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(627, 128);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(88, 13);
+            this.label26.TabIndex = 106;
+            this.label26.Text = "Fertigkeitspunkte";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(745, 48);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(13, 13);
+            this.label27.TabIndex = 107;
+            this.label27.Text = "=";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(745, 74);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(13, 13);
+            this.label29.TabIndex = 108;
+            this.label29.Text = "=";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(745, 101);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(13, 13);
+            this.label30.TabIndex = 109;
+            this.label30.Text = "=";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(745, 128);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(13, 13);
+            this.label32.TabIndex = 111;
+            this.label32.Text = "=";
+            // 
+            // lblHP
+            // 
+            this.lblHP.AutoSize = true;
+            this.lblHP.Location = new System.Drawing.Point(780, 48);
+            this.lblHP.Name = "lblHP";
+            this.lblHP.Size = new System.Drawing.Size(0, 13);
+            this.lblHP.TabIndex = 112;
+            // 
+            // lblMP
+            // 
+            this.lblMP.AutoSize = true;
+            this.lblMP.Location = new System.Drawing.Point(780, 74);
+            this.lblMP.Name = "lblMP";
+            this.lblMP.Size = new System.Drawing.Size(0, 13);
+            this.lblMP.TabIndex = 113;
+            // 
+            // lblAnimalism
+            // 
+            this.lblAnimalism.AutoSize = true;
+            this.lblAnimalism.Location = new System.Drawing.Point(780, 101);
+            this.lblAnimalism.Name = "lblAnimalism";
+            this.lblAnimalism.Size = new System.Drawing.Size(0, 13);
+            this.lblAnimalism.TabIndex = 114;
+            // 
+            // lblAP
+            // 
+            this.lblAP.AutoSize = true;
+            this.lblAP.Location = new System.Drawing.Point(780, 128);
+            this.lblAP.Name = "lblAP";
+            this.lblAP.Size = new System.Drawing.Size(0, 13);
+            this.lblAP.TabIndex = 116;
+            // 
+            // btnRandom
+            // 
+            this.btnRandom.Location = new System.Drawing.Point(409, 341);
+            this.btnRandom.Name = "btnRandom";
+            this.btnRandom.Size = new System.Drawing.Size(105, 35);
+            this.btnRandom.TabIndex = 117;
+            this.btnRandom.Text = "Zufall!";
+            this.btnRandom.UseVisualStyleBackColor = true;
+            this.btnRandom.Visible = false;
+            this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1007, 444);
+            this.ClientSize = new System.Drawing.Size(841, 411);
+            this.Controls.Add(this.btnRandom);
+            this.Controls.Add(this.lblAP);
+            this.Controls.Add(this.lblAnimalism);
+            this.Controls.Add(this.lblMP);
+            this.Controls.Add(this.lblHP);
+            this.Controls.Add(this.label32);
+            this.Controls.Add(this.label30);
+            this.Controls.Add(this.label29);
+            this.Controls.Add(this.label27);
+            this.Controls.Add(this.label26);
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.label22);
             this.Controls.Add(this.label37);
             this.Controls.Add(this.label28);
-            this.Controls.Add(this.label31);
-            this.Controls.Add(this.label32);
-            this.Controls.Add(this.label33);
-            this.Controls.Add(this.label34);
-            this.Controls.Add(this.label35);
-            this.Controls.Add(this.label36);
+            this.Controls.Add(this.lblLuck33);
+            this.Controls.Add(this.lblMana33);
+            this.Controls.Add(this.lblAppearance33);
+            this.Controls.Add(this.lblEducation33);
+            this.Controls.Add(this.lblDexterity33);
+            this.Controls.Add(this.lblIntelligence33);
             this.Controls.Add(this.lblConstitution33);
             this.Controls.Add(this.lblStrength33);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.label23);
-            this.Controls.Add(this.label24);
-            this.Controls.Add(this.label25);
-            this.Controls.Add(this.label26);
-            this.Controls.Add(this.label27);
+            this.Controls.Add(this.lblLuck50);
+            this.Controls.Add(this.lblMana50);
+            this.Controls.Add(this.lblAppearance50);
+            this.Controls.Add(this.lblEducation50);
+            this.Controls.Add(this.lblDexterity50);
+            this.Controls.Add(this.lblIntelligence50);
             this.Controls.Add(this.lblConstitution50);
             this.Controls.Add(this.lblStrength50);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.lblLuck);
-            this.Controls.Add(this.lblMana);
-            this.Controls.Add(this.lblAppearance);
-            this.Controls.Add(this.lblEducation);
-            this.Controls.Add(this.lblDexterity);
-            this.Controls.Add(this.lblIntelligence);
+            this.Controls.Add(this.lblLuck100);
+            this.Controls.Add(this.lblMana100);
+            this.Controls.Add(this.lblAppearance100);
+            this.Controls.Add(this.lblEducation100);
+            this.Controls.Add(this.lblDexterity100);
+            this.Controls.Add(this.lblIntelligence100);
             this.Controls.Add(this.lblSize);
             this.Controls.Add(this.lblConstitution100);
             this.Controls.Add(this.lblStrength100);
@@ -939,33 +1080,46 @@ namespace Katzulhu_Cats
         private System.Windows.Forms.Label lblStrength100;
         private System.Windows.Forms.Label lblConstitution100;
         private System.Windows.Forms.Label lblSize;
-        private System.Windows.Forms.Label lblIntelligence;
-        private System.Windows.Forms.Label lblDexterity;
-        private System.Windows.Forms.Label lblEducation;
-        private System.Windows.Forms.Label lblAppearance;
-        private System.Windows.Forms.Label lblMana;
-        private System.Windows.Forms.Label lblLuck;
+        private System.Windows.Forms.Label lblIntelligence100;
+        private System.Windows.Forms.Label lblDexterity100;
+        private System.Windows.Forms.Label lblEducation100;
+        private System.Windows.Forms.Label lblAppearance100;
+        private System.Windows.Forms.Label lblMana100;
+        private System.Windows.Forms.Label lblLuck100;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label lblLuck50;
+        private System.Windows.Forms.Label lblMana50;
+        private System.Windows.Forms.Label lblAppearance50;
+        private System.Windows.Forms.Label lblEducation50;
+        private System.Windows.Forms.Label lblDexterity50;
+        private System.Windows.Forms.Label lblIntelligence50;
         private System.Windows.Forms.Label lblConstitution50;
         private System.Windows.Forms.Label lblStrength50;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label lblLuck33;
+        private System.Windows.Forms.Label lblMana33;
+        private System.Windows.Forms.Label lblAppearance33;
+        private System.Windows.Forms.Label lblEducation33;
+        private System.Windows.Forms.Label lblDexterity33;
+        private System.Windows.Forms.Label lblIntelligence33;
         private System.Windows.Forms.Label lblConstitution33;
         private System.Windows.Forms.Label lblStrength33;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label lblHP;
+        private System.Windows.Forms.Label lblMP;
+        private System.Windows.Forms.Label lblAnimalism;
+        private System.Windows.Forms.Label lblAP;
+        private System.Windows.Forms.Button btnRandom;
     }
 }
 

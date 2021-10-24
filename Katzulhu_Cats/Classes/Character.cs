@@ -95,7 +95,7 @@ namespace Katzulhu_Cats.Classes
             return luckValue;
         }
 
-        public int HealthPoints(int constitution, int size)
+        public int HP(int constitution, int size)
         {
             int healthPointsValue;
 
@@ -113,13 +113,13 @@ namespace Katzulhu_Cats.Classes
             return animalismValue;
         }
 
-        public int MagicPoints(int mana)
+        public int MP(int mana)
         {
-            int magicPointsValue;
+            int mpPointsValue;
 
-            magicPointsValue = mana / 5;
+            mpPointsValue = mana / 5;
 
-            return magicPointsValue;
+            return mpPointsValue;
         }
 
         public int AbilityPoints(int education, int intelligence)
@@ -130,5 +130,7 @@ namespace Katzulhu_Cats.Classes
 
             return abilityPointsValue;
         }
+
+        
     }
 }

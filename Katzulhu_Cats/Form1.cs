@@ -86,7 +86,9 @@ namespace Katzulhu_Cats
                 intelligence2 = Convert.ToInt32(cbIntelligence2.SelectedItem.ToString());
                 intelligence = c.Intelligence(intelligence1, intelligence2);
 
-                lblIntelligence.Text = Convert.ToString(intelligence);
+                lblIntelligence100.Text = Convert.ToString(intelligence);
+                lblIntelligence50.Text = Convert.ToString(intelligence / 2);
+                lblIntelligence33.Text = Convert.ToString(intelligence / 3);
             }
             else
             {
@@ -103,7 +105,9 @@ namespace Katzulhu_Cats
                 dexterity2 = Convert.ToInt32(cbDexterity1.SelectedItem.ToString());
                 dexterity = c.Dexterity(dexterity1, dexterity2);
 
-                lblDexterity.Text = Convert.ToString(dexterity);
+                lblDexterity100.Text = Convert.ToString(dexterity);
+                lblDexterity50.Text = Convert.ToString(dexterity / 2);
+                lblDexterity33.Text = Convert.ToString(dexterity / 3);
             }
             else
             {
@@ -122,7 +126,9 @@ namespace Katzulhu_Cats
                 education3 = Convert.ToInt32(cbEducation3.SelectedItem.ToString());
                 education = c.Education(education1, education2, education3);
 
-                lblEducation.Text = Convert.ToString(education);
+                lblEducation100.Text = Convert.ToString(education);
+                lblEducation50.Text = Convert.ToString(education / 2);
+                lblEducation33.Text = Convert.ToString(education / 3);
             }
             else
             {
@@ -141,7 +147,9 @@ namespace Katzulhu_Cats
                 appearance3 = Convert.ToInt32(cbAppearance3.SelectedItem.ToString());
                 appearance = c.Appearance(appearance1, appearance2, appearance3);
 
-                lblAppearance.Text = Convert.ToString(appearance);
+                lblAppearance100.Text = Convert.ToString(appearance);
+                lblAppearance50.Text = Convert.ToString(appearance / 2);
+                lblAppearance33.Text = Convert.ToString(appearance / 3);
             }
             else
             {
@@ -150,7 +158,18 @@ namespace Katzulhu_Cats
 
             if (cbMana1.SelectedIndex != -1 && cbMana2.SelectedIndex != -1)
             {
-                lblMana.Text = Convert.ToString(c.Mana(Convert.ToInt32(cbMana1.SelectedItem.ToString()), Convert.ToInt32(cbMana2.SelectedItem.ToString())));
+
+                int mana1;
+                int mana2;
+                int mana;
+
+                mana1 = Convert.ToInt32(cbMana1.SelectedItem.ToString());
+                mana2 = Convert.ToInt32(cbMana2.SelectedItem.ToString());
+                mana = c.Dexterity(mana1, mana2);
+
+                lblMana100.Text = Convert.ToString(mana);
+                lblMana50.Text = Convert.ToString(mana / 2);
+                lblMana33.Text = Convert.ToString(mana / 3);
             }
             else
             {
@@ -159,13 +178,77 @@ namespace Katzulhu_Cats
 
             if (cbLuck1.SelectedIndex != -1 && cbLuck2.SelectedIndex != -1 && cbLuck3.SelectedIndex != -1)
             {
-                lblLuck.Text = Convert.ToString(c.Luck(Convert.ToInt32(cbLuck1.SelectedItem.ToString()), Convert.ToInt32(cbLuck2.SelectedItem.ToString()), Convert.ToInt32(cbLuck3.SelectedItem.ToString())));
+                int luck1;
+                int luck2;
+                int luck3;
+                int luck;
+
+                luck1 = Convert.ToInt32(cbLuck1.SelectedItem.ToString());
+                luck2 = Convert.ToInt32(cbLuck2.SelectedItem.ToString());
+                luck3 = Convert.ToInt32(cbLuck3.SelectedItem.ToString());
+                luck = c.Appearance(luck1, luck2, luck3);
+
+                lblLuck100.Text = Convert.ToString(luck);
+                lblLuck50.Text = Convert.ToString(luck / 2);
+                lblLuck33.Text = Convert.ToString(luck / 3);
             }
             else
             {
                 MessageBox.Show("Bitte Eingaben bei Glück überprüfen", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+            if (lblConstitution100.Text != "" && lblSize.Text !="")
+            {
+                int hp;
+                int constitution;
+                int size;
+
+                constitution = Convert.ToInt32(lblConstitution100.Text);
+                size = Convert.ToInt32(lblSize.Text);
+                hp = c.HP(constitution, size);
+
+                lblHP.Text = Convert.ToString(hp);
+            }
+
+            if (lblMana100.Text != "")
+            {
+                int mp;
+                int animalism;
+                int mana;
+
+                mana = Convert.ToInt32(lblMana100.Text);
+                mp = c.MP(mana);
+                animalism = c.Animalism(mana);
+
+                lblMP.Text = Convert.ToString(mp);
+                lblAnimalism.Text = Convert.ToString(animalism);
+            }
+
+            if (lblEducation100.Text != "" && lblIntelligence100.Text != "")
+            {
+                int ap;
+                int education;
+                int intelligence;
+
+                education = Convert.ToInt32(lblEducation100.Text);
+                intelligence = Convert.ToInt32(lblIntelligence100.Text);
+                ap = c.AbilityPoints(education, intelligence);
+
+                lblAP.Text = Convert.ToString(ap);
+            }
+        }
+
+        private void btnRandom_Click(object sender, EventArgs e)
+        {
+            Random Rnd = new Random();
+            
+            
+            
+            
+            
+            
+            
+            Rnd.Next(0, 100);
         }
     }
 }
