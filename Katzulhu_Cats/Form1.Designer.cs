@@ -123,6 +123,7 @@ namespace Katzulhu_Cats
             this.lblAnimalism = new System.Windows.Forms.Label();
             this.lblAP = new System.Windows.Forms.Label();
             this.btnRandom = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -289,7 +290,7 @@ namespace Katzulhu_Cats
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(297, 341);
+            this.btnCalculate.Location = new System.Drawing.Point(257, 345);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(105, 35);
             this.btnCalculate.TabIndex = 48;
@@ -936,20 +937,30 @@ namespace Katzulhu_Cats
             // 
             // btnRandom
             // 
-            this.btnRandom.Location = new System.Drawing.Point(409, 341);
+            this.btnRandom.Location = new System.Drawing.Point(369, 345);
             this.btnRandom.Name = "btnRandom";
             this.btnRandom.Size = new System.Drawing.Size(105, 35);
             this.btnRandom.TabIndex = 117;
-            this.btnRandom.Text = "Zufall!";
+            this.btnRandom.Text = "Automatisch";
             this.btnRandom.UseVisualStyleBackColor = true;
-            this.btnRandom.Visible = false;
             this.btnRandom.Click += new System.EventHandler(this.btnRandom_Click);
+            // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(480, 345);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(105, 35);
+            this.btnReset.TabIndex = 118;
+            this.btnReset.Text = "Zurücksetzen";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(841, 411);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnRandom);
             this.Controls.Add(this.lblAP);
             this.Controls.Add(this.lblAnimalism);
@@ -1120,6 +1131,7 @@ namespace Katzulhu_Cats
         private System.Windows.Forms.Label lblAnimalism;
         private System.Windows.Forms.Label lblAP;
         private System.Windows.Forms.Button btnRandom;
+        private System.Windows.Forms.Button btnReset;
     }
 }
 

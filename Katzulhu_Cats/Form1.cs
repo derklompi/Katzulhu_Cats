@@ -42,6 +42,38 @@ namespace Katzulhu_Cats
 
         private void BtnCalculate_Click(object sender, EventArgs e)
         {
+            Calculation();
+        }
+
+        private void btnRandom_Click(object sender, EventArgs e)
+        {
+            Random Rnd = new Random();
+            
+            cbStrength1.SelectedIndex = Rnd.Next(0, 3);
+            cbConstitution1.SelectedIndex = Rnd.Next(0, 6);
+            cbConstitution2.SelectedIndex = Rnd.Next(0, 6);
+            cbIntelligence1.SelectedIndex = Rnd.Next(0, 6);
+            cbIntelligence2.SelectedIndex = Rnd.Next(0, 6);
+            cbDexterity1.SelectedIndex = Rnd.Next(0, 6);
+            cbDexterity2.SelectedIndex = Rnd.Next(0, 6);
+            cbEducation1.SelectedIndex = Rnd.Next(0, 6);
+            cbEducation2.SelectedIndex = Rnd.Next(0, 6);
+            cbEducation3.SelectedIndex = Rnd.Next(0, 6);
+            cbAppearance1.SelectedIndex = Rnd.Next(0, 6);
+            cbAppearance2.SelectedIndex = Rnd.Next(0, 6);
+            cbAppearance3.SelectedIndex = Rnd.Next(0, 6);
+            cbMana1.SelectedIndex = Rnd.Next(0, 6);
+            cbMana2.SelectedIndex = Rnd.Next(0, 6);
+            cbLuck1.SelectedIndex = Rnd.Next(0, 6);
+            cbLuck2.SelectedIndex = Rnd.Next(0, 6);
+            cbLuck3.SelectedIndex = Rnd.Next(0, 6);
+
+
+            Calculation();
+        }
+
+        private void Calculation()
+        {
             if (cbStrength1.SelectedIndex != -1)
             {
                 int strength;
@@ -197,7 +229,7 @@ namespace Katzulhu_Cats
                 MessageBox.Show("Bitte Eingaben bei Glück überprüfen", "Fehler", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            if (lblConstitution100.Text != "" && lblSize.Text !="")
+            if (lblConstitution100.Text != "" && lblSize.Text != "")
             {
                 int hp;
                 int constitution;
@@ -238,17 +270,58 @@ namespace Katzulhu_Cats
             }
         }
 
-        private void btnRandom_Click(object sender, EventArgs e)
+        private void btnReset_Click(object sender, EventArgs e)
         {
-            Random Rnd = new Random();
-            
-            
-            
-            
-            
-            
-            
-            Rnd.Next(0, 100);
+            cbStrength1.SelectedIndex = -1;
+            cbConstitution1.SelectedIndex = -1;
+            cbConstitution2.SelectedIndex = -1;
+            cbIntelligence1.SelectedIndex = -1;
+            cbIntelligence2.SelectedIndex = -1;
+            cbDexterity1.SelectedIndex = -1;
+            cbDexterity2.SelectedIndex = -1;
+            cbEducation1.SelectedIndex = -1;
+            cbEducation2.SelectedIndex = -1;
+            cbEducation3.SelectedIndex = -1;
+            cbAppearance1.SelectedIndex = -1;
+            cbAppearance2.SelectedIndex = -1;
+            cbAppearance3.SelectedIndex = -1;
+            cbMana1.SelectedIndex = -1;
+            cbMana2.SelectedIndex = -1;
+            cbLuck1.SelectedIndex = -1;
+            cbLuck2.SelectedIndex = -1;
+            cbLuck3.SelectedIndex = -1;
+
+
+            lblStrength100.Text = "";
+            lblStrength50.Text = "";
+            lblStrength33.Text = "";
+            lblConstitution100.Text = "";
+            lblConstitution50.Text = "";
+            lblConstitution33.Text = "";
+            lblIntelligence100.Text = "";
+            lblIntelligence33.Text = "";
+            lblIntelligence50.Text = "";
+            lblDexterity100.Text = "";
+            lblDexterity50.Text = "";
+            lblDexterity33.Text = "";
+            lblEducation100.Text = "";
+            lblEducation50.Text = "";
+            lblEducation33.Text = "";
+            lblAppearance100.Text = "";
+            lblAppearance50.Text = "";
+            lblAppearance33.Text = "";
+            lblMana100.Text = "";
+            lblMana50.Text = "";
+            lblMana33.Text = "";
+            lblLuck100.Text = "";
+            lblLuck50.Text = "";
+            lblLuck33.Text = "";
+            lblHP.Text = "";
+            lblMP.Text = "";
+            lblAnimalism.Text = "";
+            lblAP.Text = "";
+
+
         }
     }
 }
